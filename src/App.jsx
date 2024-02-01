@@ -16,7 +16,7 @@ function App() {
     /* Add the Router component to the App */
     <Router>
       <div>
-        <h1>My Project</h1>
+        <h3>My Project</h3>
         <nav>
             <li>
               <Link to="/">หน้าหลัก</Link>

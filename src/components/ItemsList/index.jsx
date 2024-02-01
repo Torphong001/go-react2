@@ -29,15 +29,15 @@ const ItemsList = () => {
 
   return (
         <div>
-            <h1>Items List</h1>
-            {isLoading && <p>Loading...</p>}
-            {error && <p>Error: {error}</p>}
+            <h3>รายการ</h3>
+            {isLoading && <p>กำลังโหลดข้อมูล...</p>}
+            {error && <p>ข้อผิดพลาด: {error}</p>}
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Price</th>
+                        <th>รหัส</th>
+                        <th>ชื่อ</th>
+                        <th>ราคา</th>
                     </tr>
                 </thead>
                 <tbody>

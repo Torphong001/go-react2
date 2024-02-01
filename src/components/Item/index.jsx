@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 const Item = ({ id }) => {
     const [item, setItem] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -42,5 +42,9 @@ const Item = ({ id }) => {
         </div>
     );
 };
+
+Item.propTypes = {
+    id : PropTypes.number.isRequired,
+  };
 
 export default Item;

@@ -14,6 +14,11 @@ import {
   Button
 } from '@chakra-ui/react';
 
+// onLoginSuccess is a function that will be called when the user successfully logs in
+// Javascript allowed passing functions as arguments to other functions
+// It called "callback function"
+// Javascript support higher-order functions (HOFs)
+
 function SignIn ({ onLoginSuccess }) {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -97,6 +102,8 @@ function SignIn ({ onLoginSuccess }) {
     </ChakraProvider>
   );
 }
+
+// PropTypes เป็นตัวช่วยในการตรวจสอบค่าที่รับเข้ามาว่ามีค่าตรงตามที่เราต้องการหรือไม่
 SignIn.propTypes = {
     onLoginSuccess: PropTypes.func.isRequired,
   };
