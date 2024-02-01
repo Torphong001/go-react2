@@ -16,14 +16,14 @@ function App() {
     /* Add the Router component to the App */
     <Router>
       <div>
-        <h1>My Front-end</h1>
+        <h1>My Project</h1>
         <nav>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">หน้าหลัก</Link>
             </li>
             {!isLoggedIn && (
               <li>
-                <Link to="/signin">Sign In</Link>
+                <Link to="/signin">เข้าสู่ระบบ</Link>
               </li>
             )}
         </nav>
@@ -41,7 +41,7 @@ function App() {
                     <p><ItemFormFind/></p>
                   </>
                 ) : (
-                  <p>Please sign in to view the items.</p>
+                  <p>กรุณา Login </p>
                 )}
               </div>
             </>
