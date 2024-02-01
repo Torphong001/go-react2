@@ -18,18 +18,15 @@ function App() {
       <div>
         <h3>My Project</h3>
         <nav>
-            <li>
-              <Link to="/">หน้าหลัก</Link>
-            </li>
+            <Link to="/">หน้าหลัก</Link>
+            <hr />
             {!isLoggedIn && (
-              <li>
                 <Link to="/signin">เข้าสู่ระบบ</Link>
-              </li>
             )}
         </nav>
 
         {/* Add the Routes component to the App */}
-        {/* Routes is  */}
+        {/* <> xxx </>คือตำแหน่งที่ข้อมูลจาก Component คือค่ามา */}
         <Routes>
           <Route path="/signin" element={<SignIn onLoginSuccess={handleLoginSuccess} />} />
           <Route path="/" element={
@@ -37,7 +34,9 @@ function App() {
               <div className="card">
                 {isLoggedIn ? (
                   <>
+                    <p>ยินดีต้อนรับ</p>
                     <p><ItemsList/></p>
+                    <hr/>
                     <p><ItemFormFind/></p>
                   </>
                 ) : (
